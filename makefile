@@ -1,6 +1,5 @@
 
 local-setup:
-	pyenv shell 3.10.0
 	pip install poetry=="1.8.3"
 	poetry shell
 	# install libraries from the lockfile.
@@ -8,4 +7,4 @@ local-setup:
 
 
 test:
-	python -m pytest
+	python -m pytest -v
